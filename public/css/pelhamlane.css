@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+/*	height: 100%;*/
+}
+
+body {
+	margin: 0;
+	padding: 0px;
+	background-image: url(/images/herbsagebackground.jpg); 
+	font-family: Times New Roman, Tahoma, Arial, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	/*background: white;*/
+	line-height: 100%;
+}
+
+.home_center {
+	padding: 0px;
+	margin: 0px;
+	line-height: 200%;
+}
+.home_center li a {
+	font-size: 14px;
+	padding: 15px 15px;
+        color: #000000;
+}
+
+.recipe {
+	font-family: Times New Roman, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	line-height: 100%;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+p, ol, ul {
+	list-style: none; /* get rid of bullets */
+}
+
+.round {
+	-webkit-border-radius: 5x 5px;
+	-khtml-border-radius: 5px 5px;	
+	-moz-border-radius: 5px 5px;
+	border-radius: 5px 5px;
+}
+
+a {
+	color: #3c742d;
+}
+
+#topwrapper {
+	height:150px;
+}
+
+@media only screen and (min-width: 768px) {
+	#topwrapper { height:200px; };
+}
+#topwrapper {
+	width:100%;
+	background: -webkit-linear-gradient(black, green); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(black, green); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(beige, green); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(green, beige); /* Standard syntax */
+
+	padding: 25px 15px;
+	border-style: solid;
+	border-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-color: green;
+}
+
+#logo h1
+{
+	font-size: 32;
+        font-family: Times New Roman;
+        margin: 0px 0px 0px 0px;
+        padding: 0;
+        color: black;
+        font-weight: normal;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+
+}
+	
+/* Logo */
+#logo {
+	margin: 0;
+	padding: 25px 15px;
+	height: 100px;
+	line-height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+#logo h1 {
+	font-family: Times New Roman;
+	margin: 50px 0px 0px 0px;
+	padding: 0;
+	color: black;
+	font-size: 64px;
+	font-weight: normal;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+};
+}
+#logo h2 {
+	font-family: Times New Roman;
+	margin: 35px 0px 0px 0px;
+	padding: 0;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#logo p {
+	margin: 0;
+	padding: 20px 0 0 0;
+	color: #FFF;
+	font-size: 16px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.menu {
+	overflow:hidden;
+	position:fixed;
+	top: 0;
+	width: 100%;
+	background-color: beige;
+        border-style: solid;
+        border-width: 0px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+}
+.menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 8px;
+  padding: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: white;
+  color:black;
+  display: inline-block;
+}
+
+.menu a {
+	text-decoration:none;
+}
+.menu li:hover {
+  background-color: black;
+}
+
+.sidebar {
+	font-family: Arial;
+	font-size: 20px;
+	padding: 10px;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	/* box-shadow: 3px 3px 6px green; */
+}
+@media only screen and (min-width: 768px) {
+        .sidebar { font-size:14px; };
+}
+
+.sidebar ul {
+	list-style-type:none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.sidebar li {
+	padding: 5px 0;
+	border-bottom: 1px solid #cbe4c7;
+}
+
+.sidebar a {
+	text-decoration: none;
+
+}
+.sidebar li:hover {
+	background-color: black;
+	color: white;
+}
+.sidebar li a:hover, li a:active{
+	color: white;
+}		
+
+#content {
+	height: 100%;
+	float: left;
+/*	margin: 10px 0;*/
+/*		padding: 10px;*/
+		/*background: #faf5de;*/
+		text-align: justify;
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: black;
+		box-shadow: 3px 3px 6px green;*/
+        font-family: Arial;
+/*      margin: 10px;*/
+        padding: 10px;
+        float: left;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+
+	}
+		
+#footer {
+	margin: auto auto 135px auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
